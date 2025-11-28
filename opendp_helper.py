@@ -110,7 +110,7 @@ def get_raw_lf_domain(metadata_dict: dict):
 
         series_domain = dp.domains.series_domain(
             name,
-            dp.domains.atom_domain(T=series_type, nullable=series_nullable, bounds=series_bounds),
+            dp.domains.atom_domain(T=series_type, nan=series_nullable, bounds=series_bounds),
         )
         series_domains.append(series_domain)
 
