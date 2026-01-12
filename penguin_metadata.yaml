@@ -10,6 +10,9 @@ columns:
     - Adelie
     - Chinstrap
     - Gentoo
+    max_partition_length : 300
+    max_influenced_partitions: 1
+    max_partition_contributions: 2
   island:
     type: string
     nullable_proportion: 0.0
@@ -18,6 +21,9 @@ columns:
     - Torgersen
     - Biscoe
     - Dream
+    max_partition_length : 300
+    max_influenced_partitions: 1
+    max_partition_contributions: 2
   bill_length_mm:
     type: float
     nullable_proportion: 0.0
@@ -50,4 +56,7 @@ columns:
     categories:
     - MALE
     - FEMALE
+    max_partition_length : 400
+    max_influenced_partitions: 1
+    max_partition_contributions: 1
 rows: 344
